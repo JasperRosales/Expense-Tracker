@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ncnl.expensetracker.controller.SignupPageController">
+    <children>
+        <ImageView fitHeight="609.0" fitWidth="1000.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/bsub.jpg" />
+            </image>
+        </ImageView>
+        <Pane layoutY="-9.0" opacity="0.28" prefHeight="610.0" prefWidth="1000.0" style="-fx-background-color: black;" />
+        <Pane layoutX="151.0" layoutY="94.0" opacity="0.6" prefHeight="400.0" prefWidth="713.0" style="-fx-background-color: black; -fx-background-radius: 20px;">
+            <children>
+                <Label layoutX="283.0" layoutY="21.0" text="Signup Page" textFill="WHITE">
+                    <font>
+                        <Font name="Javanese Text" size="27.0" />
+                    </font>
+                </Label>
+                <Label layoutX="44.0" layoutY="107.0" prefHeight="14.0" prefWidth="130.0" text="Fullname:" textFill="WHITE">
+                    <font>
+                        <Font name="Javanese Text" size="17.0" />
+                    </font>
+                </Label>
+                <Label layoutX="43.0" layoutY="244.0" prefHeight="14.0" prefWidth="130.0" text="Password:" textFill="WHITE">
+                    <font>
+                        <Font name="Javanese Text" size="17.0" />
+                    </font>
+                </Label>
+            <Label layoutX="41.0" layoutY="178.0" prefHeight="14.0" prefWidth="130.0" text="Gsuite:" textFill="WHITE">
+               <font>
+                  <Font name="Javanese Text" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="380.0" layoutY="108.0" prefHeight="14.0" prefWidth="130.0" text="Department:" textFill="WHITE">
+               <font>
+                  <Font name="Javanese Text" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="381.0" layoutY="179.0" prefHeight="14.0" prefWidth="130.0" text="Role:" textFill="WHITE">
+               <font>
+                  <Font name="Javanese Text" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="321.0" layoutY="273.0" prefHeight="14.0" prefWidth="130.0" textFill="WHITE">
+               <font>
+                  <Font name="Javanese Text" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="380.0" layoutY="245.0" prefHeight="14.0" prefWidth="130.0" text="Program" textFill="WHITE">
+               <font>
+                  <Font name="Javanese Text" size="17.0" />
+               </font>
+            </Label>
+            <Button id="signoutBtn" layoutX="183.0" layoutY="334.0" mnemonicParsing="false" onAction="#userSignout" opacity="0.8" prefHeight="25.0" prefWidth="136.0" text="Signout" />
+            <Label layoutX="333.0" layoutY="339.0" text="Already registered? click here to " textFill="WHITE" />
+            <Hyperlink id="loginLink" layoutX="502.0" layoutY="336.0" onAction="#goToLoginPage" text="login" textFill="RED" underline="true" />
+            </children>
+        </Pane>
+        <ImageView fitHeight="75.0" fitWidth="189.0" layoutX="752.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/bsulogo.png" />
+            </image>
+            <effect>
+                <Glow level="0.05" />
+            </effect>
+        </ImageView>
+      <TextField fx:id="nameSignupTxt" layoutX="194.0" layoutY="245.0" prefHeight="25.0" prefWidth="279.0" promptText="Ex. Jose P. Rizal" />
+      <TextField fx:id="gsuiteSignupTxt" layoutX="192.0" layoutY="311.0" prefHeight="25.0" prefWidth="279.0" promptText="Ex. 21-29304@g.batstate-u.edu.ph" />
+      <TextField fx:id="departmentSignupTxt" layoutX="531.0" layoutY="245.0" prefHeight="25.0" prefWidth="279.0" promptText="Ex. CICS" />
+      <TextField fx:id="roleSignupTxt" layoutX="531.0" layoutY="311.0" prefHeight="25.0" prefWidth="279.0" promptText="Ex. CICS Governor" />
+      <TextField fx:id="programSignupTxt" layoutX="531.0" layoutY="379.0" prefHeight="25.0" prefWidth="279.0" promptText="Ex. BSIT" />
+      <Button fx:id="registerBtn" layoutX="193.0" layoutY="428.0" mnemonicParsing="false" onAction="#userRegister" prefHeight="0.0" prefWidth="136.0" style="-fx-background-color: red;" text="Register" textFill="WHITE" />
+      <PasswordField fx:id="passwordSignupTxt" layoutX="195.0" layoutY="380.0" prefHeight="25.0" prefWidth="279.0" promptText="Enter your password" />
+
+    </children>
+</AnchorPane>
