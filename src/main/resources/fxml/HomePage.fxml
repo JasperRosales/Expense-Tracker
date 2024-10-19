@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1020.0" style="-fx-background-color: white;" fx:controller="ncnl.expensetracker.controller.HomePageController" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label layoutX="33.0" layoutY="110.0" text="Welcome to the Expense Tracker for SSC! (っ ͡❛ ω ͡❛)っ🎔">
+            <font>
+                <Font name="Roboto Regular" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="33.0" layoutY="23.0" text="Hello ">
+            <font>
+                <Font name="Roboto Regular" size="65.0" />
+            </font>
+        </Label>
+        <Label fx:id="usernameLabel" layoutX="199.0" layoutY="23.0" text="user" underline="true">
+            <font>
+                <Font name="Roboto Regular" size="65.0" />
+            </font>
+        </Label>
+        <Label layoutX="32.0" layoutY="180.0" text="Current Budget" textFill="#8d8b8b">
+            <font>
+                <Font name="Roboto Regular" size="18.0" />
+            </font>
+        </Label>
+        <Pane layoutX="29.0" layoutY="214.0" prefHeight="200.0" prefWidth="146.0" style="-fx-background-color: #7D8ABC; -fx-background-radius: 30;">
+            <children>
+                <Label layoutX="18.0" layoutY="22.0" text="CET" textFill="#fff4f4">
+                    <font>
+                        <Font name="Roboto Bold Condensed" size="32.0" />
+                    </font>
+                </Label>
+                <Label fx:id="cicsBudgetLabel" alignment="CENTER" graphicTextGap="6.0" layoutX="12.0" layoutY="78.0" prefHeight="45.0" prefWidth="123.0" text="0.00" textAlignment="CENTER" textFill="#fff4f4">
+                    <font>
+                        <Font name="ArtifaktElement-Heavy" size="20.0" />
+                    </font>
+                </Label>
+                <Circle fill="#1f93ff00" layoutX="113.0" layoutY="167.0" radius="19.0" stroke="#fcfafa" strokeType="INSIDE" strokeWidth="10.0" />
+            </children>
+        </Pane>
+        <Pane layoutX="181.0" layoutY="215.0" prefHeight="200.0" prefWidth="146.0" style="-fx-background-color: #009FBD; -fx-background-radius: 30;">
+            <children>
+                <Label layoutX="15.0" layoutY="22.0" text="CICS" textFill="#fff4f4">
+                    <font>
+                        <Font name="Roboto Bold Condensed" size="32.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" graphicTextGap="6.0" layoutX="10.0" layoutY="78.0" prefHeight="45.0" prefWidth="128.0" text="0.00" textAlignment="CENTER" textFill="#fff4f4">
+                    <font>
+                        <Font name="ArtifaktElement-Heavy" size="20.0" />
+                    </font>
+                </Label>
+                <Circle fill="#1f93ff00" layoutX="119.0" layoutY="167.0" radius="19.0" stroke="#fcfafa" strokeType="INSIDE" strokeWidth="10.0" />
+            </children>
+        </Pane>
+        <Pane layoutX="333.0" layoutY="215.0" prefHeight="200.0" prefWidth="146.0" style="-fx-background-color: #FF5F00; -fx-background-radius: 30;">
+            <children>
+                <Label layoutX="14.0" layoutY="24.0" text="SSC" textFill="#fff4f4">
+                    <font>
+                        <Font name="Roboto Bold Condensed" size="32.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" graphicTextGap="6.0" layoutX="12.0" layoutY="78.0" prefHeight="45.0" prefWidth="123.0" text="0.00" textAlignment="CENTER" textFill="#fff4f4">
+                    <font>
+                        <Font name="ArtifaktElement-Heavy" size="20.0" />
+                    </font>
+                </Label>
+                <Circle fill="#1f93ff00" layoutX="116.0" layoutY="167.0" radius="19.0" stroke="#fcfafa" strokeType="INSIDE" strokeWidth="10.0" />
+            </children>
+        </Pane>
+        <Pane layoutX="486.0" layoutY="215.0" prefHeight="200.0" prefWidth="504.0" style="-fx-background-color: #FF9100; -fx-background-radius: 30;">
+            <children>
+                <Label layoutX="20.0" layoutY="26.0" prefHeight="24.0" prefWidth="196.0" text="Sample" textFill="#fff4f4">
+                    <font>
+                        <Font name="Roboto Bold Condensed" size="20.0" />
+                    </font>
+                </Label>
+                <Line endX="368.0" layoutX="115.0" layoutY="60.0" startX="-100.0" stroke="WHITE" />
+                <Label layoutX="20.0" layoutY="67.0" prefHeight="24.0" prefWidth="196.0" text="Sample" textFill="#fff4f4">
+                    <font>
+                        <Font name="Roboto Bold Condensed" size="20.0" />
+                    </font>
+                </Label>
+                <Line endX="368.0" layoutX="116.0" layoutY="100.0" startX="-100.0" stroke="WHITE" />
+                <Label layoutX="20.0" layoutY="107.0" prefHeight="24.0" prefWidth="196.0" text="Sample" textFill="#fff4f4">
+                    <font>
+                        <Font name="Roboto Bold Condensed" size="20.0" />
+                    </font>
+                </Label>
+                <Line endX="368.0" layoutX="116.0" layoutY="139.0" startX="-100.0" stroke="WHITE" />
+                <Label layoutX="20.0" layoutY="148.0" prefHeight="24.0" prefWidth="196.0" text="Sample" textFill="#fff4f4">
+                    <font>
+                        <Font name="Roboto Bold Condensed" size="20.0" />
+                    </font>
+                </Label>
+                <Line endX="368.0" layoutX="118.0" layoutY="177.0" startX="-100.0" stroke="WHITE" />
+                <Label layoutX="223.0" layoutY="26.0" prefHeight="24.0" prefWidth="91.0" text="price" textFill="#fff4f4">
+                    <font>
+                        <Font name="Roboto Bold Condensed" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="223.0" layoutY="67.0" prefHeight="24.0" prefWidth="91.0" text="price" textFill="#fff4f4">
+                    <font>
+                        <Font name="Roboto Bold Condensed" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="223.0" layoutY="107.0" prefHeight="24.0" prefWidth="91.0" text="price" textFill="#fff4f4">
+                    <font>
+                        <Font name="Roboto Bold Condensed" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="223.0" layoutY="148.0" prefHeight="24.0" prefWidth="91.0" text="price" textFill="#fff4f4">
+                    <font>
+                        <Font name="Roboto Bold Condensed" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="324.0" layoutY="26.0" prefHeight="24.0" prefWidth="166.0" text="event" textFill="#fff4f4">
+                    <font>
+                        <Font name="Roboto Bold Condensed" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="324.0" layoutY="67.0" prefHeight="24.0" prefWidth="166.0" text="event" textFill="#fff4f4">
+                    <font>
+                        <Font name="Roboto Bold Condensed" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="324.0" layoutY="107.0" prefHeight="24.0" prefWidth="166.0" text="event" textFill="#fff4f4">
+                    <font>
+                        <Font name="Roboto Bold Condensed" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="324.0" layoutY="148.0" prefHeight="24.0" prefWidth="166.0" text="event" textFill="#fff4f4">
+                    <font>
+                        <Font name="Roboto Bold Condensed" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Label layoutX="486.0" layoutY="180.0" text="Recent Logins" textFill="#8d8b8b">
+            <font>
+                <Font name="Roboto Regular" size="18.0" />
+            </font>
+        </Label>
+        <Pane layoutX="30.0" layoutY="448.0" prefHeight="127.0" prefWidth="962.0" style="-fx-background-color: #FFC100; -fx-background-radius: 15;">
+            <children>
+                <Label layoutX="18.0" layoutY="22.0" textFill="#fff4f4">
+                    <font>
+                        <Font name="Roboto Bold Condensed" size="32.0" />
+                    </font>
+                </Label>
+                <Pane layoutX="35.0" layoutY="11.0" prefHeight="100.0" prefWidth="196.0" style="-fx-background-color: #fff; -fx-background-radius: 15;">
+                    <children>
+                        <Label layoutX="18.0" layoutY="22.0" textFill="#fff4f4">
+                            <font>
+                                <Font name="Roboto Bold Condensed" size="32.0" />
+                            </font>
+                        </Label>
+                        <Circle fill="#e5ff00" layoutX="34.0" layoutY="50.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" />
+                        <Label layoutX="68.0" layoutY="58.0" prefHeight="23.0" prefWidth="128.0" text="re" textFill="WHITE">
+                            <font>
+                                <Font name="Roboto Regular" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="59.0" layoutY="39.0" text="+ New Expense" textFill="#1e0b0b">
+                            <font>
+                                <Font name="Roboto Regular" size="18.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="15.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/add.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+                <Pane layoutX="263.0" layoutY="11.0" prefHeight="100.0" prefWidth="196.0" style="-fx-background-color: fff; -fx-background-radius: 15;">
+                    <children>
+                        <Label layoutX="18.0" layoutY="22.0" textFill="#fff4f4">
+                            <font>
+                                <Font name="Roboto Bold Condensed" size="32.0" />
+                            </font>
+                        </Label>
+                        <Circle fill="#e5ff00" layoutX="38.0" layoutY="50.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" />
+                        <ImageView fitHeight="29.0" fitWidth="31.0" layoutX="24.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/receipt.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="65.0" layoutY="39.0" text="+ Add Receipt" textFill="#1e0b0b">
+                            <font>
+                                <Font name="Roboto Regular" size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <Pane layoutX="499.0" layoutY="11.0" prefHeight="100.0" prefWidth="196.0" style="-fx-background-color: #ffff; -fx-background-radius: 15;">
+                    <children>
+                        <Circle fill="#e5ff00" layoutX="38.0" layoutY="50.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" />
+                        <Label layoutX="18.0" layoutY="22.0" textFill="#fff4f4">
+                            <font>
+                                <Font name="Roboto Bold Condensed" size="32.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="23.0" fitWidth="29.0" layoutX="27.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/file.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="62.0" layoutY="39.0" text="+ Create Report" textFill="#1e0b0b">
+                            <font>
+                                <Font name="Roboto Regular" size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <Pane layoutX="732.0" layoutY="11.0" prefHeight="100.0" prefWidth="196.0" style="-fx-background-color: #fff; -fx-background-radius: 15;">
+                    <children>
+                        <Label layoutX="18.0" layoutY="22.0" textFill="#fff4f4">
+                            <font>
+                                <Font name="Roboto Bold Condensed" size="32.0" />
+                            </font>
+                        </Label>
+                        <Circle fill="#e5ff00" layoutX="34.0" layoutY="50.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" />
+                        <ImageView fitHeight="29.0" fitWidth="23.0" layoutX="23.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/people.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="59.0" layoutY="39.0" text="+ Manage Team" textFill="#1e0b0b">
+                            <font>
+                                <Font name="Roboto Regular" size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+            </children>
+        </Pane>
+        <Label layoutX="33.0" layoutY="421.0" prefHeight="23.0" prefWidth="146.0" text="Quick Access" textFill="#8d8b8b">
+            <font>
+                <Font name="Roboto Regular" size="18.0" />
+            </font>
+        </Label>
+        <ButtonBar layoutX="276.0" layoutY="663.0" prefHeight="40.0" prefWidth="200.0" />
+        <Pane layoutX="30.0" layoutY="606.0" prefHeight="183.0" prefWidth="475.0" style="-fx-background-color: #213555; -fx-background-radius: 30;">
+            <children>
+                <LineChart layoutX="1.0" layoutY="12.0" prefHeight="183.0" prefWidth="457.0">
+                    <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis side="LEFT" />
+                    </yAxis>
+                </LineChart>
+            </children>
+        </Pane>
+        <Pane layoutX="517.0" layoutY="606.0" prefHeight="183.0" prefWidth="475.0" style="-fx-background-color: #C70039; -fx-background-radius: 30;">
+            <children>
+                <BarChart layoutX="3.0" layoutY="13.0" prefHeight="183.0" prefWidth="457.0">
+                    <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis side="LEFT" />
+                    </yAxis>
+                </BarChart>
+            </children>
+        </Pane>
+        <Label layoutX="33.0" layoutY="582.0" prefHeight="23.0" prefWidth="280.0" text="Real Time Transaction Chart" textFill="#8d8b8b">
+            <font>
+                <Font name="Roboto Regular" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="514.0" layoutY="581.0" prefHeight="23.0" prefWidth="280.0" text="Montly Expenses Chart" textFill="#8d8b8b">
+            <font>
+                <Font name="Roboto Regular" size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

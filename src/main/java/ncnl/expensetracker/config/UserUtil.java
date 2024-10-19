@@ -33,7 +33,7 @@ public class UserUtil {
 
     public static boolean isValidPassword(String password) {
         if (password.length() < 8) {
-            return false; // Minimum length check
+            return false;
         }
         boolean hasUpperCase = Pattern.compile("[A-Z]").matcher(password).find();
         boolean hasDigit = Pattern.compile("[0-9]").matcher(password).find();
